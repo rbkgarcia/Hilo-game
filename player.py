@@ -10,9 +10,6 @@ class Player:
 
     def __init__(self):
         """Constructs a new Player.
-        
-        Args:
-            self (Player): an instance of Player.
         """
         self.currentCard = Cards()
         self.is_playing = True
@@ -20,9 +17,6 @@ class Player:
 
     def start_game(self):
         """Starts the game by running the main game loop.
-        
-        Args:
-            self (Player): an instance of Player.
         """
         while self.is_playing:
             self.get_inputs()
@@ -30,8 +24,7 @@ class Player:
 
     def get_inputs(self):
         """Ask the user if the next card will be higher or lower than the current card.
-        Args:
-            self (Player): an instance of Player.
+
         """
         val = self.currentCard.value
         print("The card is: %d" %val)
